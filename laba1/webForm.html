@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webForm</title>
+    <style>
+        .span1{
+            width: 310px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+        }
+        .span2{
+            width: 370px; 
+            display: flex; 
+            margin-bottom: 10px;
+        }
+        .p1{
+            width: 130px;
+            text-align: right;
+        }
+
+        .input1{
+            height: 40px;
+        }
+        .p2{
+            padding: 0px 0px 0px 3px;
+
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h2>Данные студента</h2>
+        <span class="span1">
+            <p class="p1">Имя студента</p>
+            <input class="input1" type="text" placeholder="обязательно заполнить"required>
+        </span>
+
+        <span class="span1">
+            <p class="p1">Отчество студента</p>
+            <input class="input1" type="text" placeholder="обязательно заполнить" required>
+        </span>
+
+        <span class="span1">
+            <p class="p1">Фамилия студента</p>
+            <input class="input1" type="text" placeholder="обязательно заполнить" required>
+        </span>
+
+        <span class="span1">
+            <p class="p1">Адрес почты</p>
+            <input class="input1" type="mail" required>
+        </span>
+
+        <span class="span1">
+            <p class="p1">Контактный номер</p>
+            <input class="input1" type="number" required>
+        </span>
+
+        <span class="span2">
+            <p>Какую социальную сеть вы используете</p>
+            <input class="input1" type="checkbox">
+            <p class="p2">Vk</p>
+            <input class="input1" type="checkbox">
+            <p class="p2">Facebook</p>
+            <input class="input1" type="checkbox">
+            <p class="p2">Instagram</p>
+        </span>
+        <input type="submit" value="отправить">
+    </form>
+</body>
+</html>
