@@ -1,0 +1,39 @@
+.h1{
+    text-align: center;
+}
+.span1{
+font-weight: 1000;
+
+}
+.table{
+    text-align: center;
+}
+.aside1{
+    float: right;
+    
+}   
+.a1{
+    text-decoration: none;
+}
+h1{
+    color: magenta;
+    font-family:Monotype corsiva;
+}
+.li1{
+    font-family:'Times New Roman';
+    font-size: 18pt;
+    color: red;
+}
+.li2{
+    font-family:'Times New Roman';
+    font-size: 20pt;
+    color: yellow;
+}
+.li3{
+    font-family:'Times New Roman';
+    font-size: 22pt;
+    color: green;
+}
+tr td{
+    color: rgb(227, 14, 198);
+ }
