@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecondTable</title>
+    <style>
+       table{
+        border-collapse: collapse;
+       }
+         td {
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: center;
+        }
+        .tr1{
+            empty-cells: hide;
+        }
+        table{
+            border: none;
+        }
+        h5{
+            font-size: 1.5em;
+        }
+        .td1:first-child{
+            background-color:aqua;
+        }
+        .td1{
+            empty-cells: hide;
+        }
+        .tr1:first-child{
+            background-color: blue;
+        }
+        .td1:nth-child(2n){
+            background-color: skyblue;
+        }
+        .td2:nth-child(3n){
+            background-color: purple;
+        }
+        .td3:nth-child(4n){
+            background-color: green;
+        }
+        .null td{
+            empty-cells: hide;
+            background-color: white;
+        }
+    p{
+        text-align: center;
+    }
+    table{
+    margin: auto;
+    }
+    .tr2{
+        background-color: darkblue;
+        color: white;
+        
+
+    }
+    td{
+        color: white;
+    }
+    
+    </style>
+</head>
+<body>
+    <table border="1">
+        <thead>
+                <caption style="margin: auto; font-size: 1.2em;">Russia:Top smartphone vendors <br>Q1 2021</caption>
+        </thead>
+        <tbody>
+            <tr class="tr2">
+                <td style="background-color: white; border-style: none;"></td>
+                <td>Vendor</td>
+                <td>Unit Share</td>
+                <td>Annual Growth</td>
+            </tr>
+            <tr>
+                <td style="color: black;">#1 &#8657</td>
+                <td class="td1">Xiaomi</td>
+                <td class="td2">32%</td>
+                <td class="td3">+125%</td>
+            </tr>
+            <tr>
+                <td style="color: black;">#2 &#8657</td>
+                <td class="td1">Samsung</td>
+                <td class="td2">27%</td>
+                <td class="td3">+41%</td>
+            </tr>
+            <tr>
+                <td style="color: black;">#3 &#8657</td>
+                <td class="td1">Honor</td>
+                <td class="td2">10%</td>
+                <td class="td3">0%</td>
+            </tr>
+            <tr>
+                <td style="color: black;">#4 &#8660</td>
+                <td class="td1">Apple</td>
+                <td class="td2">9%</td>
+                <td class="td3">+24%</td>
+            </tr>
+            <tr>
+                <td style="color: black;">#5 &#8660</td>
+                <td class="td1">Realme</td>
+                <td class="td2">9%</td>
+                <td class="td3">+682%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td class="td1" style="background-color: white; border-style: none;"></td>
+                <td class="td1">Total</td>
+                <td class="td2">82%</td>
+                <td class="td3">+682%</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

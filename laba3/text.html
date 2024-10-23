@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            text-align: justify;
+        }
         @font-face {
             font-family: 'Caveat';
             src: url(../laba3/fonts/Caveat/Caveat.ttf) ;
@@ -31,7 +34,7 @@
             padding: 0;
             text-align: center;
             font-weight: bold;
-            text-transform: uppercase 45px;
+            text-transform: uppercase;
             text-shadow: 4px 8px 12px rgb(223, 59, 86);
         }
         h2 {
@@ -41,13 +44,14 @@
         }
         p{
             font-family: "Comfortaa";
-            text-align: justify;
+            font-weight: bold;
             margin: 0;
             line-height: 200%;
             font-size: 20px;
+            text-align: justify;
         }
         p::first-letter {
-            text-align: justify;
+            font-weight: bold;
             font-size: 45px;
             color: white;
             background-color: hsla(275, 100%, 10%, 1);
@@ -59,7 +63,7 @@
             color: blue;
         }
         li span{
-            color: black;
+            color: black;   
         }
         ul li{
              color: black;
@@ -70,10 +74,13 @@
             font-size: 20px;
             text-align: justify;
             text-indent: 25px;
+            list-style-type:none;
+            counter-increment: item;
          
         }
         ol li::before{
             color: blue;
+            content: counter(item, upper-roman) ".";
         }
         .h2{
             margin: 0;
@@ -86,6 +93,12 @@
             font-family: "Comfortaa";
             font-size: 20px;
             text-indent: 25px;
+            
+        }
+        .p5::first-line{
+            color: red;
+            text-indent: 25px;
+            
         }
     </style>
 </head>
@@ -103,28 +116,29 @@
     <p><span>Valorant</span> предлагает игрокам разнообразные карты с уникальными локациями и механиками. 
         Каждая карта имеет свои особенности, которые требуют от команд тактического мышления и совместной работы для достижения победы.
     </p>
-    <h2 class="h2">dfakmdasjdnas</h2>
+    <h2 class="h2">Персонажи</h2>
     <ol>
-        <li type="I" >
-          <span>dasdasdas</span>  
-            <ul type="square">
-                <li>dasdasdas</li>
-                <li>dasdasdas</li>
-                <li>dasdasdasdas</li>
-            </ul>
+        <li>
+          <span>Исправлена ошибка, из-за которой хитбокс Neon мог слегка смещаться при скольжении.</span>             
+        </li>
+        <li>
+            <span>Контрольный выстрел: Время действия умения уменьшено с 20 до 12 сек.</span> 
+        </li>
+        <li>
+            <span>Исправлена ошибка, из-за которой в начале раунда Neon могла проскользить прямо в барьер и получить бесплатный заряд скольжения.</span> 
            
         </li>
-        <li type="I">
-            <span>dasdasdas</span> 
-            <ul type="square">
-                <li>dasdasdasdas</li>
-                <li>dasdasdasdas</li>
-                <li>dasdasdasdsadas</li>
-            </ul>
+        <li>
+            <span>Исправлена ошибка, из-за которой на наклонных поверхностях столкновение с "Замуровкой" занимало больше времени.</span> 
+        </li>
+        <li>
+            <span>Коснувшись земли, он становится невидимым. 
+                При активации он распускается, становясь скопищем острых лоз, которые замедляют всех игроков,
+                 передвигающихся в этой области, а также наносят им урон.</span>
         </li>
     </ol>
     <p class="p5">
-        <span class=span2>Вселенная игры Valorant, как и во многих видеоиграх, основана на определенных правилах и сюжете, который в жаргоне </span>  называется лором. Хотя в шутере от Riot Games, благодаря особенностям жанра, лор не так обширен, как в различных сюжетных играх, разработчики расширяют свой проект с каждым обновлением.
+        Вселенная игры Valorant, как и во многих видеоиграх, основана на определенных правилах и сюжете, который в жаргоне называется лором. Хотя в шутере от Riot Games, благодаря особенностям жанра, лор не так обширен, как в различных сюжетных играх, разработчики расширяют свой проект с каждым обновлением.
          Регулярно появляются новые видео и строки, раскрывающие больше деталей об универсуме Valorant. Сегодня редакционная команда 
          Bo3 подготовила для вас материал, подробно описывающий лор Valorant, чтобы наши читатели могли узнать эту увлекательную историю.
     </p>
