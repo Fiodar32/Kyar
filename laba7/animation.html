@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body{
+        overflow-x: hidden;
+      }
+      img {
+        width: 200px;
+        height: 200px;
+        margin: 0px 20px 0px 0px;
+      }
+      .img1:hover {
+        transform: scale(0.5);
+      }
+      .img2:hover {
+        transform: rotate(45deg);
+      }
+      .img3:hover {
+        transform: translate(50px);
+      }
+      .img4:hover {
+        transform: skew(-20deg);
+      }
+      .div2 {
+        margin-top: 20px;
+        margin-right: 20px;
+      }
+      button {
+        width: 150px;
+        height: 50px;
+        margin-right: 30px;
+      }
+      .b1:hover {
+        background-color: black;
+        color: white;
+      }
+      .b2:hover {
+        border: 4px solid red;
+        box-shadow: 0px 0px 0px 4px yellow;
+      }
+      .b3:hover {
+        border-top: 4px solid green;
+        border-bottom: 4px solid green;
+        border-right: 0px;
+        border-left: 0px;
+      }
+      .b4:hover {
+        border-right: 4px solid blue;
+        border-left: 4px solid blue;
+        border-top: 0px;
+        border-bottom: 0px;
+      }
+      .b5:hover{
+        order: 0;
+        background: radial-gradient(
+          yellow 5%,
+          rgb(255, 71, 200) 50%,
+          rgb(113, 113, 173) 70%,
+          rgb(43, 205, 255) 90%
+        );
+      }
+      .img5{
+        width: 200px; /* Ширина изображения */
+            height: 150px; /* Высота изображения */
+            overflow: hidden; /* Скрываем лишние части */
+            position: relative;
+            clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+      }
+      .img6{
+        transform: perspective(500px) rotateY(45deg) ; 
+         
+
+      }
+      .img7{
+        width: 200px; /* Ширина изображения */
+            height: 150px; /* Высота изображения */
+            overflow: hidden; /* Скрываем лишние части */
+            position: relative;
+            clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+      }
+      .img8{
+        transform: perspective(500px) rotateY(-45deg);
+      }
+      .div3{
+        margin-top: 20px;
+      }
+      .card1, .card2, .card3, .card4{
+            position: absolute;
+            float: left;
+            width: 200px;
+            height: 200px;
+            border: 3px solid black;
+            
+            margin: 100px 0px 0px 0px ;
+        }
+        .card1{
+            background-image: url(1759584057_0_0_2048_3072_768x0_80_0_0_03a60f1c3831d5a1ac65a6cec558ce4b.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            transform: perspective(300px) rotateY(40deg);
+            left: 280px;
+            animation: cardanimation1 10s linear infinite alternate;
+        }
+        .card2{
+            background-image: url(sobakaTwo.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            transform: perspective(300px) rotateY(40deg);
+            left: 300px;
+            animation: cardanimation2 10s linear infinite alternate;
+        }
+        .card3{
+            background-image: url(shrek.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            transform: perspective(300px) rotateY(40deg);
+            left: 320px;
+            animation: cardanimation3 10s linear infinite alternate;
+        }
+        .card4{
+            background-image: url(sobaka.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            transform: perspective(300px) rotateY(40deg);
+            left: 340px;
+            animation: cardanimation4 10s linear infinite alternate;
+        }
+        @keyframes cardanimation1 {
+        0%{
+            transform: perspective(300px) rotateY(30deg);
+        }
+        50%{
+            transform: perspective(300px) rotateY(0deg);
+            left: 280px;
+        }
+        100%{
+            transform: perspective(300px) rotateY(0deg);
+            left: 280px;
+        }
+    }
+    @keyframes cardanimation2 {
+        0%{
+            transform: perspective(300px) rotateY(30deg);
+        }
+        50%{
+            transform: perspective(300px) rotateY(0deg);
+            left: 300px;
+            filter: blur(0px);
+        }
+        100%{
+            transform: perspective(300px) rotateY(0deg);
+            left: 500px;
+            filter: blur(10px);
+        }
+    }
+    @keyframes cardanimation3 {
+        0%{
+            transform: perspective(300px) rotateY(30deg);
+        }
+        50%{
+            transform: perspective(300px) rotateY(0deg);
+            left: 320px;
+            filter: grayscale(0);
+        }
+        100%{
+            transform: perspective(300px) rotateY(0deg);
+            left: 720px;
+            filter: grayscale(1);
+        }
+    }
+    @keyframes cardanimation4 {
+        0%{
+            transform: perspective(300px) rotateY(30deg);
+        }
+        50%{
+            transform: perspective(300px) rotateY(0deg);
+            left: 340px;
+            filter: invert(0);
+        }
+        100%{
+            transform: perspective(300px) rotateY(0deg);
+            left: 940px;
+            filter: invert(1);
+        }
+    }
+        .slider {
+            width: 200px;
+            height: 150px;
+            overflow: hidden;
+            border: 5px solid purple;
+            position: relative;
+            margin-top: 50px;
+        }
+        .slides {
+            display: flex;
+            animation: slide 5s linear infinite;
+        }
+        .slide {
+            min-width: 100%;
+            transition: transform 5s ease-in-out;
+        }
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            20% { transform: translateX(0); }
+            25% { transform: translateX(-100%); }
+            45% { transform: translateX(-100%); }
+            50% { transform: translateX(-200%); }
+            70% { transform: translateX(-200%); }
+            75% { transform: translateX(-300%); }
+            95% { transform: translateX(-300%); }
+            100% { transform: translateX(-400%); }
+        }
+
+        .image {
+            position: absolute;
+            width: 100px; 
+            height: 100px; 
+            background-image: url('image.jpg'); 
+            background-size: cover;
+        }
+        .container{
+          margin: 20px;
+          display: flex;
+          gap: 35px;
+        }
+        .animation{
+            margin-top: 50px;
+            width: 600px;
+            height: 300px;
+            animation: identifier 5s linear infinite;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: 3px solid black;
+        }
+        @keyframes identifier {
+            0%{
+                background-image: url(1759584057_0_0_2048_3072_768x0_80_0_0_03a60f1c3831d5a1ac65a6cec558ce4b.jpg);
+            }
+            20%{
+                background-image: url(shrek.webp);
+            }
+            40%{
+                background-image: url(sobaka.webp);
+            }
+            60%{
+                background-image: url(sobakaTwo.jpg);
+            }
+            80%{
+                background-image: url(mem.jpg);
+            }
+            100%{
+                background-image: url(monkey.jpg);
+            }
+        }
+        .imgfirst{
+        animation: imgfirst 5s linear infinite alternate;
+    margin: auto;
+
+    }
+    @keyframes imgfirst {
+        0%{
+            transform: translateX(0px);
+        }
+        100%{
+            transform: translateX(200px);
+        }
+    }
+       /*2*/
+   .imgtwo{
+    animation: imgtwo 5s linear infinite alternate;
+    margin: auto;
+   }
+   @keyframes imgtwo {
+    0%{
+        border-radius: 0;
+        transform: translateX(0px);
+    }
+    100%{ border-radius: 70%;
+        transform: translateX(200px);
+    }
+   }
+   .container{
+    margin: 20px;
+    display: flex;
+    gap: 35px;
+   }
+   /*3*/
+   .imgthree{
+    position: absolute;
+    animation: imgthree 5s linear infinite ;
+   }
+   @keyframes imgthree {
+    0%{
+        transform: translateX(-10vw);
+    }
+    100%{
+        transform: translateX(100vw);
+    }
+}
+   /*4*/
+   .imgfour{
+    margin: auto;
+    animation: imgfour 5s linear infinite alternate;
+   }
+   @keyframes imgfour {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(50px);
+    }
+}
+   /*5*/
+   .imgfive{
+    margin: auto;
+    position: relative;
+    animation: imgfive 5s linear infinite alternate;
+   }
+   @keyframes imgfive {
+    0% { left: 0; top: 0; }
+    25% { left: 200px; top: 0; }
+    50% { left: 200px; top: 200px; }
+    75% { left: 0; top: 200px; }
+    100% { left: 0; top: 0; }
+}
+.text-block {
+            width: 300px;
+            height: 300px;
+            border-style: solid;
+            border-width: 1px;
+            margin: auto;
+        }
+
+        .text-block:hover {
+            animation: text-block 5s linear infinite alternate;
+        }
+        @keyframes text-block {
+          0% {
+            color: rebeccapurple;
+          }
+          25% {
+            color:blue;
+          }
+          50% {
+            color: aqua;
+          }
+          75% {
+            color: lightgreen;
+          }
+          100%{
+            color:greenyellow
+          }
+        }
+        h1{
+        text-align: center;
+        font-size: 24px;
+        opacity: 0;
+        animation: fadeInOut 4s infinite; 
+      }
+       @keyframes fadeInOut {
+        0%{
+          opacity: 0;
+        }
+        50%{
+           opacity: 80%;
+        }
+        100% {
+          opacity: 0;
+        }
+       }
+    </style>
+  </head>
+  <body>
+    <h1>Задание 1</h1>
+    <div>
+      <img
+        class="img1"
+        src="../laba7/1759584057_0_0_2048_3072_768x0_80_0_0_03a60f1c3831d5a1ac65a6cec558ce4b.jpg"
+        alt=""
+      />
+      <img class="img2" src="../laba7/sobakaTwo.jpg" alt="" />
+      <img class="img3" src="../laba7/shrek.webp" alt="" />
+      <img class="img4" src="../laba7/sobaka.webp" alt="" />
+    </div>
+    <h1>Задание 2</h1>
+    <div class="div2">
+      <button class="b1">Кнопка 1</button>
+      <button class="b2">Кнопка 2</button>
+      <button class="b3">Кнопка 3</button>
+      <button class="b4">Кнопка 4</button>
+      <button class="b5">Кнопка 5</button>
+    </div>
+    <h1>Задание 3</h1>
+    <div class="div3">
+        <img
+        class="img5"
+        src="../laba7/1759584057_0_0_2048_3072_768x0_80_0_0_03a60f1c3831d5a1ac65a6cec558ce4b.jpg"
+        alt=""
+      />
+      <img class="img6" src="../laba7/sobakaTwo.jpg" alt="" />
+      <img class="img7" src="../laba7/shrek.webp" alt="" />
+      <img class="img8" src="../laba7/sobaka.webp" alt="" />
+    </div>
+    <h1>Задание 4</h1>    
+    <div class="container">
+      <div class="card1"></div>
+      <div class="card2"></div>
+      <div class="card3"></div>
+      <div class="card4"></div>
+  </div>
+  <h1 style="margin-top: 550px;">Задание 5</h1>
+  <div class="container">
+    <div style="margin: auto;">
+      <div class="animation"></div>
+    </div>
+</div>
+<h1>Задание 6</h1>
+ <div style="margin-top: 200px;">
+  <div class="container">
+    <img class="imgfirst" src="1759584057_0_0_2048_3072_768x0_80_0_0_03a60f1c3831d5a1ac65a6cec558ce4b.jpg">
+</div>
+<div class="container">
+    <img class="imgtwo" src="mem.jpg">
+</div>
+<div class="container">
+    <img class="imgthree" src="shrek.webp">
+</div>
+<div class="container" style="margin-top: 150px;">
+    <img class="imgfour" src="sobakaTwo.jpg">
+</div>
+<div class="container"">
+    <img class=" imgfive" src="sobaka.webp">
+</div>
+ </div>
+ <h1 style="margin-top: 200px;">Задание 7</h1>
+ <div class="text-block" style="font-size: 15px;">
+  Последний день перед Рождеством прошел. Зимняя, ясная ночь наступила. Глянули звезды. Месяц величаво поднялся на небо посветить добрым людям и всему миру, чтобы всем было весело колядовать и славить Христа 1. Морозило сильнее, чем с утра; но зато так было тихо, что скрып мороза под сапогом слышался за полверсты. Еще ни одна толпа парубков не показывалась под окнами хат; месяц один только заглядывал в них украдкою, как бы вызывая принаряживавшихся девушек выбежать скорее на скрыпучий снег. Тут через трубу одной хаты клубами повалился дым и пошел тучею по небу, и вместе с дымом поднялась ведьма верхом на метле.
+</div>
+
+  </body>
+</html>
