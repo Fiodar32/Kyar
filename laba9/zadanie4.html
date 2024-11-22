@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Задание 4</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="skeleton.css" />
+    <style>
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+        grid-row: 1/4;
+        height: 250px;
+        margin: 10px 35px 0px 35px;
+      }
+      .stil {
+        border: 2px solid black;
+        text-align: center;
+      }
+      .st1 {
+        grid-column: 1 / span 2;
+        grid-row: 1;
+      }
+      .st2 {
+        grid-column: 3 / span 2;
+        grid-row: 1;
+        font-size: 35px;
+      }
+      .dt1 {
+        grid-column: 1;
+        grid-row: 2;
+      }
+      .dt2 {
+        grid-column: 2;
+        grid-row: 2;
+      }
+      .dt3 {
+        grid-column: 3;
+        grid-row: 2;
+      }
+      .dt4 {
+        grid-column: 4;
+        grid-row: 2;
+      }
+      .ft1,
+      .ft2,
+      .ft3,
+      .ft4 {
+        padding: 15px;
+        height: 350px;
+      }
+      .ft1 {
+        grid-column: 1;
+        grid-row: 3;
+        font-size: 20px;
+      }
+      .ft2 {
+        grid-column: 2;
+        grid-row: 3;
+        font-size: 20px;
+      }
+      .ft3 {
+        grid-column: 3;
+        grid-row: 3;
+        font-size: 20px;
+      }
+      .ft4 {
+        grid-column: 4;
+        grid-row: 3;
+        font-size: 20px;
+      }
+      .st2 a{
+        text-decoration: none;
+        color: black;
+        font-size: 25px;
+      }
+      .st2 a:hover{
+        color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="stil st1">
+        <img src="../laba6/fitBSTU.png" style="width: 200px; height: 200px" />
+      </div>
+      <div class="stil st2" style="width: 1000px">
+        <a href="index.html" target="_blank">Задание 1</a>
+        <a href="index2.html" target="_blank">Задание 1.1</a>
+        <a href="index3.html" target="_blank">Задание 2</a>
+        <a href="zadanie3.html" target="_blank">Задание 3</a>
+        <a href="zadanie3New.html" target="_blank">Задание 3.1</a>
+      </div>
+      <div class="stil dt1">
+        <h1 style="font-size: 30px">display: grid;</h1>
+      </div>
+      <div class="stil dt2">
+        <h2 style="font-size: 30px">
+          grid-template-columns и grid-template-rows
+        </h2>
+      </div>
+      <div class="stil dt3">
+        <h3 style="font-size: 30px">grid-gap (или gap)</h3>
+      </div>
+      <div class="stil dt4"><h4 style="font-size: 30px">grid-area</h4></div>
+      <div class="stil ft1" style="text-align: justify; font: 1em sans-serif">
+        Это свойство используется для определения контейнера сетки. Оно
+        превращает элемент в grid-контейнер, позволяя дочерним элементам стать
+        grid-элементами. При этом вы можете управлять расположением этих
+        элементов в сетке.
+      </div>
+      <div class="stil ft2" style="text-align: justify; font: 1em sans-serif">
+        1. grid-template-columns: задает ширину колонок. 2. grid-template-rows:
+        задает высоту строк.
+      </div>
+      <div class="stil ft3" style="text-align: justify; font: 1em sans-serif">
+        Это свойство определяет промежутки между строками и колонками в сетке.
+        Оно позволяет легко управлять расстоянием между элементами без
+        необходимости добавлять допол- нительные отступы или маргины к самим
+        элементам.
+      </div>
+      <div class="stil ft4" style="text-align: justify; font: 1em sans-serif">
+        Это свойство позволяет вам управлять расположением отдельных элементов
+        внутри grid-контейнера. Вы можете задать элементу имя области сетки и
+        затем использовать это имя для размещения элемента в нужной области.
+      </div>
+    </div>
+  </body>
+</html>
