@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie1</title>
+    <style>
+        .container {
+            flex-direction: column;
+            width: 1200px;
+        }
+
+        .zagalovok {
+            border: 1px solid black;
+            text-align: center;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            height: 50px;
+        }
+
+        .main {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .zagalovok1,
+        .zagalovok2,
+        .zagalovok3 {
+            border: 1px solid black;
+            padding: 20px;
+            text-align: center;
+            flex-basis: 30%;
+        }
+        .fig_music{
+            color: black !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="zagalovok">
+            <p>Заголовок 1</p>
+        </div>
+        <div class="main">
+            <div class="zagalovok1">
+                <iframe height="170" src="../laba10/Братья Грим - Кустурица.mp4" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <iframe height="170"
+                    src="../laba10/ДДТ - Дождь _ Кавер на гитаре от Романа Конограя _ Гитара с Нуля.mp4"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <iframe height="170"
+                    src="../laba10/Порнофильмы - Прости, прощай, привет! ( Кавер от Романа Конограя ).mp4"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="zagalovok2">
+                <p>Flexbox-верстка – разметка макетов веб-страниц, которая позволяет автоматически настраивать ширину
+                    элементов, находящихся внутри flex-контейнера. Для применения данного способа разметки следует
+                    учитывать разделение применяемых свойств на
+                    свойства flex-контейнера и свойства flex-элемента.
+                    С помощью display: flex; осуществляется преобразование
+                    HTML-элемента в flex-контейнер, а элементы, находящиеся внутри него, в flex-элементы. По умолчанию
+                    flex-элементы помещаются друг за другом в одной строке. Свойство flex-flow позволяет
+                    выбрать направление отображения элементов в контейнере, а также указать их перенос на следующую
+                    строку. Первое значение
+                    определяет направление, а второе – перенос на следующую строку.
+                    Свойство flex-flow является сокращенной записью и содержит
+                    значения свойств flex-direction и flex-wrap. Flex-элементы могут размещаться в строке (значение row)
+                    или в колонке (значение column).
+                    Перенос элементов осуществляется с помощью значения wrap.
+                    Свойство justify-content определяет способ выключки flexэлементов в строке. Для выравнивания по
+                    левому краю используется значение flex-start, а по правому краю – flex-end. Для равномерного
+                    распределения элементов, за счет создания пространства
+                    между ними необходимо применить значение space-between, а значение space-around добавляет поля по
+                    левому и правому краям
+                    крайних элементов.</p>
+            </div>
+            <div class="zagalovok3">
+                <figure>
+                    <audio controls src="../laba10/Порнофильмы - Уроки любви.mp3"></audio>
+                    <figcaption class="fig_music">Порнофильмы - Уроки любви</figcaption>
+                </figure>
+                <figure>
+                    <audio controls src="../laba10/Порнофильмы - Я Так Соскучился.mp3"></audio>
+                    <figcaption class="fig_music">Порнофильмы - Я так соскучился</figcaption>
+                </figure>
+                <figure>
+                    <audio controls src="../laba10/Miyagi - Captain.mp3"></audio>
+                    <figcaption class="fig_music">Miyagy - captain</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
