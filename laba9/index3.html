@@ -3,138 +3,184 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zadanie2</title>
+    <title>Задание 2</title>
     <style>
-      img {
-        width: 200px;
-        height: 200px;
-        margin-top: 10px;
-      }
       * {
         margin: 0;
         padding: 0;
         border: 0;
         box-sizing: border-box;
-        font-size: 18px;
-        text-align: center;
+        font-family: "Courier New", Courier, monospace;
       }
+
       .container {
         padding: 10px;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        column-gap: 10px;
-        height: 30vh;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 40px;
       }
-      .block1,
-      .block2,
-      .block3,
-      .block4,
-      .block5 {
+
+      .block {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        color: white;
+        filter: brightness(0.8);
         border: 2px solid black;
-        margin-top: 10px;
-        height: 30vh;
+        border-radius: 3px;
+        height: 158px;
+        background-repeat: no-repeat;
+        background-size: cover;
       }
-      .newBlock {
-        border: 2px solid black;
-        margin-top: 10px;
+
+      .block:nth-child(9) {
         grid-column-start: 4;
         grid-column-end: 6;
         grid-row-start: 2;
         grid-row-end: 4;
-        height: 61vh;
+        height: 100%;
       }
-      .newBlock2 {
-        align-items: center;
-        border: 2px solid black;
-        margin-top: 10px;
+
+      .block:nth-child(10) {
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 3;
         grid-row-end: 5;
-        height: 61vh;
+        height: 356px;
+        flex-direction: column;
+        padding: 10px;
+        background: none;
+        color: black;
+        overflow: hidden;
       }
-      .image9 {
-        width: 65vh;
-        height: 58vh;
+
+      .block:nth-child(1) {
+        background-image: url(../laba6/263ee84b4035fb7d53da43b86477a6ca_x1.jpg);
       }
-      p {
-        flex: 1;
-        font-size: 18px;
-        line-height: 1.5;
+
+      .block:nth-child(2) {
+        background-image: url(../laba6/2dbec46faede2a9a4b22bdae4e10f8bb_x1.jpg);
       }
-      .image10 {
+
+      .block:nth-child(3) {
+        background-image: url(../laba6/a403ccc886b1e2f8e1fc606b7931d983_x1.jpg);
+      }
+
+      .block:nth-child(4) {
+        background-image: url(../laba6/dog.jpg);
+      }
+
+      .block:nth-child(5) {
+        background-image: url(../laba6/ff9ba5cdd48bf524d29f03595bfcff97_x1.jpg);
+      }
+
+      .block:nth-child(6) {
+        background-image: url(../laba6/free-icon-tick-11708440.png);
+      }
+
+      .block:nth-child(7) {
+        background-image: url(../laba6/hourse.webp);
+      }
+
+      .block:nth-child(8) {
+        background-image: url(../laba6/images.jpg);
+      }
+
+      .block:nth-child(9) {
+        background-image: url(../laba9/2k.gif);
+      }
+
+      .block:nth-child(11) {
+        background-image: url(../laba6/mem.jpg);
+      }
+
+      .block:nth-child(12) {
+        background-image: url(../laba6/monkey.jpg);
+      }
+
+      .block:nth-child(13) {
+        background-image: url(../laba6/Грачи.jpg);
+      }
+
+      .block:nth-child(14) {
+        background-image: url(../laba6/Домик.png);
+      }
+      .block:nth-child(10) .text-with-image {
+        position: relative;
+        background-color: transparent;
+      }
+
+      .block:nth-child(10) .text-with-image img {
         float: left;
-        margin-right: 20px;
-        width: 300px;
-        margin-left: 10px;
+        margin-right: 15px;
+        width: 80%;
+        height: auto;
+        max-height: 100%;
+        border-radius: 5px;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="block1">
-        <img src="../laba6/Грачи.jpg" alt="" /><br />Грачи
+      <div class="block">
+        <p>Картинка для фона</p>
       </div>
-      <div class="block2">
-        <img src="../laba6/Домик.png" alt="" /><br />Домик
+      <div class="block">
+        <p>Картинка для фона</p>
       </div>
-      <div class="block3"><img src="../laba6/Брак.jpg" alt="" /><br />Брак</div>
-      <div class="block4">
-        <img src="../laba6/Купанье.jpg" alt="" /><br />Купанье
+      <div class="block">
+        <p>Картинка для фона</p>
       </div>
-      <div class="block5"><img src="../laba6/Рожь.jpg" alt="" /><br />Рожь</div>
-
-      <div class="block1">
-        <img src="../laba6/Похищение.jpg" alt="" /><br />Похищение
+      <div class="block">
+        <p>Картинка для фона</p>
       </div>
-      <div class="block2">
-        <img src="../laba6/утроВсосновомЛесу.jpg" alt="" /><br />утро в сосновом
-        лесу
+      <div class="block">
+        <p>Картинка для фона</p>
       </div>
-      <div class="block3">
-        <img src="../laba6/черный_квадрат.jpg" alt="" /><br />Черный квадрат
+      <div class="block">
+        <p>Картинка для фона</p>
       </div>
-      <div class="newBlock">
-        <img class="image9" src="../laba9/2k.gif" alt="" />
+      <div class="block">
+        <p>Картинка для фона</p>
       </div>
-      <div class="block5">
-        <img
-          src="../laba6/263ee84b4035fb7d53da43b86477a6ca_x1.jpg"
-          alt=""
-        /><br />Краски
+      <div class="block">
+        <p>Картинка для фона</p>
       </div>
-
-      <div class="block1">
-        <img
-          src="../laba6/2dbec46faede2a9a4b22bdae4e10f8bb_x1.jpg"
-          alt=""
-        /><br />Мальчик
+      <div class="block"></div>
+      <div class="block">
+        <div class="text-with-image">
+          <img
+            style="width: 200px; height: 200px; margin: 0"
+            src="../laba6/Купанье.jpg"
+            alt="Картинка с обтекаемым текстом"
+          />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            repudiandae dolorem vitae. Blanditiis sit animi, doloremque, a
+            suscipit officiis quos itaque, natus exercitationem quisquam
+            consectetur unde dolores ratione nisi dolorum.Loe Lorem ipsum, dolor
+            sit amet consectetur adipisicing elit. Obcaecati error eum quos
+            doloremque similique impedit hic quidem vel? Iusto ullam ipsam
+            expedita nam. Saepe at nihil labore sequi quas. Sed? Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Quos excepturi non
+            officia est recusandae unde aliquam repellat sapiente quaerat,
+            dolores laudantium, possimus laboriosam ut quidem! Neque dolorem
+            iste maxime necessitatibus.
+          </p>
+        </div>
       </div>
-      <div class="block2">
-        <img
-          src="../laba6/a403ccc886b1e2f8e1fc606b7931d983_x1.jpg"
-          alt=""
-        /><br />Три богатыря
+      <div class="block">
+        <p>Картинка для фона</p>
       </div>
-      <div class="block3">
-        <img
-          src="../laba6/ff9ba5cdd48bf524d29f03595bfcff97_x1.jpg"
-          alt=""
-        /><br />Арт
+      <div class="block">
+        <p>Картинка для фона</p>
       </div>
-      <div class="newBlock2">
-        <img src="../laba6/hourse.webp" alt="" class="image10" />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias rem
-          exercitationem molestiae et dolorem eius id qui nam magni minus modi
-          dignissimos excepturi omnis, unde blanditiis quis accusamus veritatis
-          distinctio! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Dolores modi corrupti odit? Nemo itaque laborum iste hic vel fuga
-          deleniti expedita nesciunt architecto quo delectus, odit officiis
-          corrupti, corporis quod.
-        </p>
+      <div class="block">
+        <p>Картинка для фона</p>
+      </div>
+      <div class="block">
+        <p>Картинка для фона</p>
       </div>
     </div>
-    <div class="container"></div>
   </body>
 </html>
