@@ -5,28 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zadanie1</title>
+    <link href="css/index2.css" rel="stylesheet" media="(max-width:
+    1280px)">
     <style>
+        @import url("css/index.css") (max-width: 768px);
+
         .container {
             flex-direction: column;
             margin: auto;
         }
+
         @media screen and (max-width:932px) {
             .main {
                 flex-direction: column;
             }
-            .container{
+
+            .container {
                 margin: auto;
             }
-            
+
         }
 
 
         .zagalovok {
+            display: block;
             border: 1px solid black;
             text-align: center;
             margin-bottom: 10px;
             margin-top: 10px;
             height: 50px;
+
+        }
+
+        .zagalovok~iframe {
+
             width: auto;
         }
 
@@ -43,8 +55,55 @@
             text-align: center;
             flex-basis: 30%;
         }
-        .fig_music{
+
+        .fig_music {
             color: black !important;
+        }
+
+        figure {
+            border: 2px solid #000;
+            padding: 10px;
+            display: inline-block;
+            text-align: center;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 200px;
+        }
+
+        figcaption {
+            margin-top: 10px;
+            font-style: italic;
+            color: #555;
+        }
+
+        .galary {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        @media (max-width: 1280px) {
+            .div1 {
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+
+        @media screen and (max-width: 450px) {
+            .figur {
+                color: red;
+            }
         }
     </style>
 </head>
@@ -54,7 +113,7 @@
         <div class="zagalovok">
             <p>Заголовок 1</p>
         </div>
-        <div  class="main">
+        <div class="main">
             <div class="zagalovok1">
                 <iframe height="170" src="../laba10/Братья Грим - Кустурица.mp4" title="YouTube video player"
                     frameborder="0"
@@ -108,6 +167,46 @@
                 </figure>
             </div>
         </div>
+
+        <div class="galary">
+            <div class="div1">
+                <figure class="figure1">
+                    <img src="../laba6/черный_квадрат.jpg" alt="">
+                    <figcaption class="figur">Черный квадрат</figcaption>
+                </figure>
+                <figure class="figure1">
+                    <img src="../laba6/ff9ba5cdd48bf524d29f03595bfcff97_x1.jpg" alt="">
+                    <figcaption class="figur">Москва</figcaption>
+                </figure>
+                <figure class="figure1">
+                    <img src="../laba6/2dbec46faede2a9a4b22bdae4e10f8bb_x1.jpg" alt="">
+                    <figcaption class="figur">Мика Морозов</figcaption>
+                </figure>
+                <figure class="figure1">
+                    <img src="../laba6/263ee84b4035fb7d53da43b86477a6ca_x1.jpg" alt="">
+                    <figcaption class="figur">Павлин под ярким солнцем</figcaption>
+                </figure>
+            </div>
+            <div class="div1">
+                <figure class="figure1">
+                    <img src="../laba6/a403ccc886b1e2f8e1fc606b7931d983_x1.jpg" alt="">
+                    <figcaption class="figur">Богатыри</figcaption>
+                </figure>
+                <figure class="figure1">
+                    <img src="../laba6/Рожь.jpg" alt="">
+                    <figcaption class="figur">Рожь 1878</figcaption>
+                </figure>
+                <figure class="figure1">
+                    <img src="../laba6/утроВсосновомЛесу.jpg" alt="">
+                    <figcaption class="figur">Утро в сосновом лесу</figcaption>
+                </figure>
+                <figure class="figure1">
+                    <img src="../laba6/Грачи.jpg" alt="">
+                    <figcaption class="figur">Грачи прилетели</figcaption>
+                </figure>
+            </div>
+        </div>
+
     </div>
 </body>
 
